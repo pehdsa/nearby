@@ -1,12 +1,14 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React from "react";
+import { View } from "react-native";
 
-import { fontFamily } from "@/styles/theme"
+import { Welcome } from "@/components/welcome";
+import { Steps } from "@/components/steps";
 
 export default function Home() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={{ fontFamily: fontFamily.bold }}>Olar</Text>
+    <View style={{ flex: 1, padding: 40, gap: 40 }}>
+      <Welcome />
+      <Steps />
     </View>
-  )
+  );
 }
